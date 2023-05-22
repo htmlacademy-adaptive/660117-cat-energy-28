@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <a class="header__logo" href="#">
+      <img class="header__link" src="/" width="33" height="38" alt="Логотип Кэт энерджи.">
+    </a>
+    <svg class="header__mobile-logo" width="108" height="18"></svg>
+    <button class="header__button" type="button">
+      <span class="visually-hidden">Открыть/закрыть меню.</span>
+    </button>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Каталог продукции</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h1 class="intro__title">Функциональное питание для котов</h1>
+      <span class="intro__description">Занялся собой? Займись котом!</span>
+      <img class="intro__picture" src="/" width="280" height="270" alt="Баночка с кормом.">
+      <a class="intro__link" href="#">Подобрать программу</a>
+    </section>
+    <section class="adverts">
+      <ul class="adverts__list">
+        <li class="adverts__item ad">
+          <svg class="ad__picture"></svg>
+          <h2 class="ad__title">Похудение</h2>
+          <p class="ad__discription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
+            диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="ad__link" href="#">Каталог slim</a>
+        </li>
+        <li class="adverts__item ad">
+          <svg class="ad__picture"></svg>
+          <h2 class="ad__title">Набор массы</h2>
+          <p class="ad__discription">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+            поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="ad__link" href="#">Каталог pro</a>
+        </li>
+      </ul>
+    </section>
+    <section class="advantages">
+      <h2 class="advantages__title">Как это работает</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <p class="advantages__description">
+            Функциональное питание содержит только полезные питательные вещества.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__description">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__description">
+            Замените один-два приема обычной еды на наше функциональное питание.
+          </p>
+        </li>
+        <li class="advantages__item">
+          <p class="advantages__description">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="example">
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__description">
+        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+      </p>
+      <dl class="example__list">
+        <div class="example__item indicator">
+          <dt class="indicator__option">Снижение веса</dt>
+          <dd class="indicator__value">5 кг</dd>
+        </div>
+        <div class="example__item indicator">
+          <dt class="indicator__option">Затрачено времени</dt>
+          <dd class="indicator__value">60 дней</dd>
+        </div>
+      </dl>
+      <span class="example-price">Затраты на питание: 15 000 РУБ.</span>
+      <div class="example__slider"></div>
+    </section>
+    <section class="contacts">
+      <h2 class="contacts__title">Приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+      <div class="contacts__address">
+        <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+        <span class="contacts__city">Санкт-Петербург</span>
+      </div>
+      <img class="contacts__picture" src="/" width="320" height="362" alt="Карта.">
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer__cat-energy-link">
+      <svg class="footer__cat-energy-logo" width="128" height="24"></svg>
+    </a>
+    <ul class="footer__list">
+      <li class="footer__list-item">
+        <svg class="footer__icon" width="28" height="22"></svg>
+      </li>
+      <li class="footer__list-item">
+        <svg class="footer__icon" width="28" height="22"></svg>
+      </li>
+      <li class="footer__list-item">
+        <svg class="footer__icon" width="28" height="22"></svg>
+      </li>
+    </ul>
+    <a class="footer__html-academy-link">
+      <span class="footer__link-text">HTML Academy</span>
+      <svg class="footer__html-academy-icon" width="27" height="34"></svg>
+    </a>
+  </footer>
+</body>
+
 </html>
