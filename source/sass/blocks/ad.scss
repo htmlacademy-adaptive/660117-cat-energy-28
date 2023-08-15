@@ -1,0 +1,138 @@
+.ad {
+  padding: 30px 20px 20px 20px;
+  background-color: $grey;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 316px 80px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 60px 55px 50px;
+  }
+}
+
+.ad--slim::before {
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 22px;
+  background-image: url('/img/svg/slim.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 53px;
+
+  @media (min-width: $tablet-width) {
+    top: 80px;
+    right: 60px;
+    left: auto;
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 41px;
+    left: 52px;
+    width: 100px;
+    height: 106px;
+  }
+}
+
+.ad--mass::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 13px;
+  background-image: url('/img/svg/pro.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
+
+  @media (min-width: $tablet-width) {
+    top: 91px;
+    right: 28px;
+    left: auto;
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 47px;
+    left: 33px;
+    width: 134px;
+    height: 100px;
+  }
+}
+
+.ad__title {
+  padding: 0 0 0 91px;
+  margin: 0 0 29px 0;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 164px;
+  }
+}
+
+.ad__discription {
+  padding: 0 0 23px 0;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Lato";
+  font-weight: 400;
+  border-bottom: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 48px 0;
+    border: none;
+  }
+}
+
+.ad__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald";
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $black;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  width: fit-content;
+
+  &:hover .ad__link-arrow {
+    transform: translateX(5px) scaleX(1.4);
+    transition: 300ms;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.ad__link-arrow {
+  width: 32px;
+  height: 10px;
+}

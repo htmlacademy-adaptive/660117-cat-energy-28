@@ -1,0 +1,55 @@
+.header {
+  position: relative;
+}
+
+.header__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    background-color: transparent;
+  }
+}
+
+.header__logo {
+  :hover {
+    opacity: 0.8;
+  }
+
+  :active {
+    opacity: 0.6;
+  }
+}
+
+.header__wrapper {
+  padding-top: 10px;
+  padding-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__mobile-logo {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__button {
+  border: none;
+  width: 24px;
+  height: 16px;
+  background-image: url("../img/svg/nav-button-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

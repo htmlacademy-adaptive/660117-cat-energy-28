@@ -1,0 +1,148 @@
+.example {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+    padding-bottom: 100px;
+    background-color: $white;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 462px;
+      width: 200%;
+      background-color: $dark-grey;
+      z-index: -1;
+
+      @media (min-width: $desktop-width) {
+        background-color: $grey;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0px;
+    padding-bottom: 75px;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+}
+
+.example__title {
+  padding: 0;
+  margin: 0 0 40px 0;
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 63px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 146px 0;
+  }
+}
+
+.example__description {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Lato";
+  color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 54px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin: 0 0 69px 0;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 0;
+  }
+}
+
+.example__list {
+  margin: 0 auto 32px auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 366px;
+    max-width: 366px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 60px 0;
+  }
+}
+
+.example-price {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald";
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: auto 0 auto auto;
+    width: 200px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+    text-align: start;
+    width: 400px;
+  }
+}
+
+.example__slider {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.example__img {
+  margin: 0 auto;
+  display: block;
+}

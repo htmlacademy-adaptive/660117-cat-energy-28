@@ -1,0 +1,53 @@
+.pet-info {
+  padding-bottom: 24px;
+  border-bottom: 1px solid $light-grey;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+    border-bottom: none;
+    gap: 20px;
+  }
+}
+
+.pet-info__label {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.pet-info__input {
+  padding: 14px 20px;
+  border: 1px solid $grey;
+  width: 100%;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $light-black;
+
+  &:hover {
+    border: 1px solid $extra-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.pet-info__title {
+  flex-shrink: 0;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
