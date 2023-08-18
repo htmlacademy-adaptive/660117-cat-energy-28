@@ -1,0 +1,22 @@
+.adverts {
+  padding-top: 20px;
+}
+
+.adverts__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    column-gap: 80px;
+    grid-template-columns: 1fr 1fr;
+  }
+}

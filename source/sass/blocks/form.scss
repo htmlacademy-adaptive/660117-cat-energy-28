@@ -1,0 +1,203 @@
+.form__container {
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &--line-mode  {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -45px;
+      right: -20px;
+      left: 170px;
+      height: 1px;
+      background-color: $green;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        top: -90px;
+        right: -70px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -90px;
+        left: -70px;
+        height: 1px;
+        width: 50px;
+        background-color: $green;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        right: -110px;
+      }
+
+      &::before {
+        left: -110px;
+        width: 80px;
+      }
+    }
+  }
+}
+
+.form__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.form__container--line-mode:nth-of-type(1) {
+  &::after {
+    top: -70px;
+    left: 212px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: -90px;
+      left: 580px;
+    }
+  }
+}
+
+.form__container--line-mode:nth-of-type(2) {
+  &::after {
+    left: 144px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 220px;
+    }
+  }
+}
+
+.form__container--line-mode:nth-of-type(3) {
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 260px;
+    }
+  }
+}
+
+.form__container:nth-child(2) {
+  margin: 0 0 24px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 65px 0;
+  }
+}
+
+.form__container:nth-child(3),
+.form__container:nth-child(4),
+.form__container:nth-child(5) {
+  padding: 0 0 24px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 65px 0;
+  }
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  margin-bottom: 35px;
+
+  &--owner {
+    width: 202px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+
+    &--owner {
+      width: 560px;
+    }
+  }
+}
+
+.form__comment {
+  height: 150px;
+  width: 100%;
+  resize: none;
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $light-black;
+  padding: 10px;
+  border-color: $grey;
+
+  &:hover {
+    border-color: $extra-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+  }
+}
+
+.form__button {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  background-color: $green;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  margin-bottom: 21px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 40%;
+    margin-right: 64px;
+    margin-bottom: 0;
+    padding: 14px 20px;
+  }
+}
+
+.form__description {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    width: 50%;
+  }
+}

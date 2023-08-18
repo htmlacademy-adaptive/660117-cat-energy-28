@@ -1,0 +1,91 @@
+.second-product {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas: "title list"
+      "button button";
+    gap: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.second-product__title {
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+  color: $black;
+  display: block;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    grid-area: title;
+    margin: 0;
+  }
+}
+
+.second-product__container {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: end;
+    gap: 50px;
+    grid-area: list;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 230px 60px;
+    margin-left: auto;
+  }
+}
+
+.second-product__button {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  background-color: $green;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    grid-area: button;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}

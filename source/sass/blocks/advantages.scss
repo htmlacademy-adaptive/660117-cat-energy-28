@@ -1,0 +1,115 @@
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid $grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
+}
+
+.advantages__title {
+  padding: 0;
+  margin: 0 0 40px 0;
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 32px 0;
+  }
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 37px 80px;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    gap: 31px;
+    position: relative;
+    min-height: 280px;
+    padding: 40px 20px 30px 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 112px;
+      width: 136px;
+      height: 280px;
+      z-index: -1;
+      background-image: url("../img/svg/2.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--one::before {
+      left: 118px;
+      background-image: url("../img/svg/1.svg");
+    }
+
+    &--three::before {
+      background-image: url("../img/svg/3.svg");
+    }
+
+    &--four::before {
+      background-image: url("../img/svg/4.svg");
+    }
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Lato";
+  color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 250px;
+  }
+}
+
+.advantages__picture {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
