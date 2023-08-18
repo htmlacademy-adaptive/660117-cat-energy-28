@@ -434,7 +434,7 @@ a {
   position: absolute;
   top: 21px;
   left: 22px;
-  background-image: url("/img/svg/slim.svg");
+  background-image: url("../img/svg/slim.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 50px;
@@ -463,7 +463,7 @@ a {
   position: absolute;
   top: 24px;
   left: 13px;
-  background-image: url("/img/svg/pro.svg");
+  background-image: url("../img/svg/pro.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 67px;
@@ -894,7 +894,7 @@ a {
 }
 @media (min-width: 1440px) {
   .indicator__option {
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
   }
 }
 
